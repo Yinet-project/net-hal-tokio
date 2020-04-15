@@ -11,3 +11,8 @@ net-hal = { git = "https://github.com/Yinet-project/net-hal" }
 addr-hal = { git = "https://github.com/Yinet-project/addr-hal" }
 async-trait = "0.1"
 tokio = { version = "0.2", features = ["full"] }
+
+[dev-dependencies.cargo-husky]
+version = "1"
+default-features = false
+features = ["precommit-hook", "run-cargo-fmt", "run-cargo-test", "run-cargo-clippy"]
